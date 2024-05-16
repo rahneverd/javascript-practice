@@ -6,3 +6,5 @@ for (let i = 1; i < arrayOfNumbers.length; i++) {
         smallestNumber = arrayOfNumbers[i]
     }
 }
+
+console.log(`Smallest number is ${smallestNumber}`)
