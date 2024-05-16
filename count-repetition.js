@@ -3,7 +3,7 @@ let repetitionCount = {}
 
 let stringOfNumbers = arrayOfNumbers.join(',')
 for (let i = 0; i < arrayOfNumbers.length; i++) {
-    repetitionCount[arrayOfNumbers[i]] = stringOfNumbers.split(arrayOfNumbers[i]).length-1
+    repetitionCount[arrayOfNumbers[i]] = stringOfNumbers.split(','+arrayOfNumbers[i]+',').length-1
 }
 
 console.log(`Result: ${JSON.stringify(repetitionCount)}`)
